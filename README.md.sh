@@ -1,4 +1,7 @@
 #! /bin/sh -
+#
+# Copyright (c) 2023 Mateusz Piotrowski <0mp@FreeBSD.org>
+# SPDX-License-Identifier: BSD-2-Clause
 
 tab_character='	'
 
