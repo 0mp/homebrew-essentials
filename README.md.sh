@@ -8,7 +8,7 @@ tab_character='	'
 
 set -eu
 
-cat << 'EOF'
+cat <<'EOF'
 # 0mp's Homebrew Tap of Essentials
 
 ## Available formulae
@@ -17,12 +17,12 @@ EOF
 
 {
   printf '%s\t%s\n' "Formula" "Description"
-  brew desc --eval-all --formula Formula/* |  sed "s/:/$tab_character/"
+  brew desc --eval-all --formula Formula/* | sed "s/:/${tab_character}/"
 } | mlr --itsv --omd cat
 
 echo
 
-cat << 'EOF'
+cat <<'EOF'
 ## How do I install these formulae?
 
 `brew install 0mp/essentials/<formula>`
