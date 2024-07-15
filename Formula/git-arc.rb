@@ -6,8 +6,8 @@ class GitArc < Formula
 
   desc "Wrapper to improve integration between git and arcanist"
   homepage "https://cgit.freebsd.org/src/plain/tools/tools/git/"
-  license "BSD-2-Clause"
   url url_prefix + "/git-arc.sh?id=" + rev
+  license "BSD-2-Clause"
   sha256 "2125d0a57c522ab24a43091f851dbdd9b33633699eef84195c480630301335da"
   version "20240422" # Follows FreeBSD's devel/freebsd-git-devtools.
 
