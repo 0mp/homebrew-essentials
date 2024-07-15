@@ -1,0 +1,29 @@
+# Copyright 2024 Mateusz Piotrowski <0mp@FreeBSD.org>
+# SPDX-License-Identifier: BSD-2-Clause
+class GitArc < Formula
+  url_prefix = "https://cgit.freebsd.org/src/plain/tools/tools/git/"
+  rev = "76a8625bc71da3fa63eef5abb4782553d2588f5c"
+
+  desc "Wrapper to improve integration between git and arcanist"
+  homepage "https://cgit.freebsd.org/src/plain/tools/tools/git/"
+  license "BSD-2-Clause"
+  url url_prefix + "/git-arc.sh?id=" + rev
+  sha256 "2125d0a57c522ab24a43091f851dbdd9b33633699eef84195c480630301335da"
+  version "20240422" # Follows FreeBSD's devel/freebsd-git-devtools.
+
+  depends_on "arcanist"
+  depends_on "git"
+  depends_on "jq"
+
+  resource "manpage" do
+    url "https://cgit.freebsd.org/src/plain/tools/tools/git/git-arc.1?id=76a8625bc71da3fa63eef5abb4782553d2588f5c"
+    sha256 "3b7660960d39bbe310194f985d5cbc08836cad249e29da0692dfe7945275dc8e"
+  end
+
+  def install
+    bin.install "git-arc.sh" => "git-arc"
+    resource("manpage").stage do
+      man1.install "git-arc.1"
+    end
+  end
+end
