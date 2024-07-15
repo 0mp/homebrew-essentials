@@ -2,4 +2,6 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 README.md: README.md.sh
+	rm -f -- $@
 	sh $^ > $@
+	chmod -w $@

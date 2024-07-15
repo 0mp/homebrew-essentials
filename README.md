@@ -5,7 +5,7 @@
 | Formula | Description |
 | --- | --- |
 | arcanist |  Command-line interface for Phabricator |
-| git-arc | Wrapper to improve integration between git and arcanist |
+| git-arc |  Wrapper to improve integration between git and arcanist |
 | goat |  POSIX-compliant shell movement boosting hack for real ninjas |
 | hyperfine-scripts |  Scripts for data analysis of Hyperfine benchmarking results |
 | mantra |  CLI for live preview of mandoc manual pages for documentation contributors |
