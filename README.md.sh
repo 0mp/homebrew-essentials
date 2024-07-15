@@ -17,6 +17,7 @@ EOF
 
 {
   printf '%s\t%s\n' "Formula" "Description"
+  # shellcheck disable=SC2312
   brew desc --eval-all --formula Formula/* | sed "s/:/${tab_character}/"
 } | mlr --itsv --omd cat
 
