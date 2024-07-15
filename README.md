@@ -4,6 +4,7 @@
 
 | Formula | Description |
 | --- | --- |
+| arcanist |  Command-line interface for Phabricator |
 | goat |  POSIX-compliant shell movement boosting hack for real ninjas |
 | hyperfine-scripts |  Scripts for data analysis of Hyperfine benchmarking results |
 | mantra |  CLI for live preview of mandoc manual pages for documentation contributors |
