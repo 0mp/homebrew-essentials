@@ -11,6 +11,7 @@
 | mantra |  CLI for live preview of mandoc manual pages for documentation contributors |
 | matplotlib |  Python 2D plotting library |
 | passh |  Non-interactive password inputting CLI |
+| taptempo |  Command-line tap tempo |
 
 ## How do I install these formulae?
 
