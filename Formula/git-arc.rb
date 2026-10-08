@@ -24,7 +24,7 @@ class GitArc < Formula
     libexec.install "git-arc.sh"
     chmod 0755, libexec/"git-arc.sh"
     (bin/"git-arc").write_env_script libexec/"git-arc.sh",
-      ARC_CMD: HOMEBREW_PREFIX/"bin/arc",
+      ARC_CMD:   HOMEBREW_PREFIX/"bin/arc",
       LOCALBASE: HOMEBREW_PREFIX
     resource("manpage").stage do
       man1.install "git-arc.1"

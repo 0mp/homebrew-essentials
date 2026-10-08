@@ -75,14 +75,14 @@ class Matplotlib < Formula
   end
 
   def install
-    system Formula["python@3.11"].opt_bin/"python3", *Language::Python.setup_install_args(prefix)
+    system formula_opt_bin("python@3.11")/"python3", *Language::Python.setup_install_args(prefix)
     venv = virtualenv_create(libexec, "python3")
     venv.pip_install "wheel"
 
     site_packages = Language::Python.site_packages(python3)
 
     %w[fonttools].each do |package_name|
-      package = Formula[package_name].opt_libexec
+      package = formula_opt_libexec(package_name)
       (libexec/site_packages/"homebrew-#{package_name}.pth").write package/site_packages
     end
 
